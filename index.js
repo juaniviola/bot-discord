@@ -2,6 +2,7 @@ const Discord = require('discord.js')
 const client = new Discord.Client()
 const rp = require('request-promise')
 const cheerio = require('cheerio')
+require('dotenv').config()
 
 client.on('ready', () => {
   console.log(`ready: ${client.user.tag}`)
